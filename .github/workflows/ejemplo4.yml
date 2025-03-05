@@ -17,10 +17,10 @@ jobs:
    - name: Muestra Archivo
      run: cat alumnos.txt
 
-  prueba2:
-   runs-on: ubuntu-latest
-   steps:
-    - name: "crea archivo con contenido"
-      run: touch Alumnos.txt
-    - name: "muestra contenido del archivo"
-      run: cat Alumnos.txt
+ prueba2:
+  runs-on: ubuntu-latest
+  steps:
+   - name: "crea archivo con contenido"
+     run: touch Alumnos.txt
+   - name: "muestra contenido del archivo"
+     run: cat Alumnos.txt
