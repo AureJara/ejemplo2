@@ -1,0 +1,9 @@
+name: flujo 4
+on: [push]
+
+jobs:
+  pruebas:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "primeras interacciones con Git action"
+      
