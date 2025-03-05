@@ -5,7 +5,9 @@ jobs:
   pruebas:
     runs-on: ubuntu-latest
     steps:
-      - name: Mensaje
-        run: echo "primeras interacciones con Git action"
+      - name: "adicion de nombres al archivo"
+        run: echo "Juan >> alumnos.txt"
+             echo "Pedro >> alumnos.txt"
+            echo "Maria >> alumnos.txt"
       - name: Crear Archivo
         run: touch alumnos.txt
