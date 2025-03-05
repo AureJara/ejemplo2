@@ -6,6 +6,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Mensaje
-      - run: echo "primeras interacciones con Git action"
+        run: echo "primeras interacciones con Git action"
       - name: Crear Archivo
-      - run: touch alumnos.txt
+        run: touch alumnos.txt
