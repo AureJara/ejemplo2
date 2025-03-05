@@ -20,5 +20,7 @@ jobs:
   prueba2:
    runs-on: ubuntu-latest
    steps:
-      run: echo "Muestra contenido de alumnos"
-      run: cat alumnos.txt
+    - name: "crea archivo con contenido"
+      run: touch Alumnos.txt
+    - name: "muestra contenido del archivo"
+      run: cat Alumnos.txt
