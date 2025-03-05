@@ -2,12 +2,17 @@ name: flujo 4
 on: [push]
 
 jobs:
-  pruebas:
-    runs-on: ubuntu-latest
-    steps:
-      - name: "adicion de nombres al archivo"
-        run: echo "Juan >> alumnos.txt"
-             echo "Pedro >> alumnos.txt"
-            echo "Maria >> alumnos.txt"
-      - name: Crear Archivo
-        run: touch alumnos.txt
+ prueba1:
+  runs-on: ubuntu-latest
+  steps:
+   - name: Mensaje
+     run: echo "Hola Mundo"
+   - name: Crea Archivo
+     run: touch alumnos.txt
+   - name: Adiciona Alumnos
+     run: |
+       echo "Jose" >> alumnos.txt
+       echo "Juan" >> alumnos.txt
+       echo "Pedro" >> alumnos.txt
+   - name: Muestra Archivo
+     run: cat alumnos.txt
